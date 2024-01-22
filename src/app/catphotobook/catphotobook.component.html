@@ -11,7 +11,7 @@
     <div class="album-photo">
 
       <div class="btn-voltar">
-        <button (click)="backPhoto()">
+        <button (click)="backPhoto()" [disabled]="indexPhoto <= 1">
           <i class="bi bi-arrow-left-circle-fill"><</i>
         </button>
       </div>
@@ -22,7 +22,7 @@
       </div>
 
       <div class="btn-avancar">
-        <button (click)="goPhoto()">
+        <button (click)="goPhoto()" [disabled]="indexPhoto >= 5">
           <i class="bi bi-arrow-right-circle-fill">></i>
         </button>
     </div>
