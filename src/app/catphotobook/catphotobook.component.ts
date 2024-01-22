@@ -9,8 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 
 export class CatphotobookComponent implements OnInit {
 
+  public catName: string = 'Cheetos';
+
   @Input()
-  public catName: string = 'cheetos';
+  public dirCatName: string = this.catName.toLowerCase();
 
   public indexPhoto: number = 1;
 
@@ -20,17 +22,18 @@ export class CatphotobookComponent implements OnInit {
 
   public backPhoto() {
     this.indexPhoto--;
-    return this.catBook = `assets/imgs/cat-book/${this.catName}/${this.indexPhoto}.jpg`;
+    return this.catBook = `assets/imgs/cat-book/${this.dirCatName}/${this.indexPhoto}.jpg`;
 
   }
 
   public goPhoto() {
     this.indexPhoto++;
-    return this.catBook = `assets/imgs/cat-book/${this.catName}/${this.indexPhoto}.jpg`;
+    return this.catBook = `assets/imgs/cat-book/${this.dirCatName}/${this.indexPhoto}.jpg`;
   }
 
   ngOnInit(): void {
-    this.catBook =  `assets/imgs/cat-book/${this.catName}/${this.indexPhoto}.jpg`;
+    this.catBook =  `assets/imgs/cat-book/${this.dirCatName}/${this.indexPhoto}.jpg`;
+    this.catName = this.dirCatName.toUpperCase();
   }
 
 
