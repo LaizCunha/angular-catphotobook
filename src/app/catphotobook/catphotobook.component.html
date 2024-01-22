@@ -1,0 +1,33 @@
+<div class="container">
+
+  <div class="container__title">
+    <p class="title">CATPHOTOBOOK</p>
+  </div>
+
+  <div class="container__album">
+
+    <p id="catName">{{ catName }}</p>
+
+    <div class="album-photo">
+
+      <div class="btn-voltar">
+        <button (click)="backPhoto()">
+          <i class="bi bi-arrow-left-circle-fill"><</i>
+        </button>
+      </div>
+
+      <div class="photo">
+        <img src="{{catBook}}" alt="" srcset="">
+        <p id="index-photo">Foto {{indexPhoto}}</p>
+      </div>
+
+      <div class="btn-avancar">
+        <button (click)="goPhoto()">
+          <i class="bi bi-arrow-right-circle-fill">></i>
+        </button>
+    </div>
+
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,54 @@
+.container{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container__title{
+  font-weight: bolder;
+  font-size: 100PX;
+  text-align: center;
+}
+
+.title{
+  padding: 30px;
+  margin: 0px;
+}
+
+.container__album{
+  border: 1px solid #000;
+  width: 1000px;
+  height: 500px;
+  text-align: center;
+}
+
+#catName{
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.album-photo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo > img{
+  padding: 20px;
+  width: 500px;
+  height: 300px;
+  max-width: 500px;
+  max-height: 300px;
+}
+#index-photo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+
+}
