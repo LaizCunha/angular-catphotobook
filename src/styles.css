@@ -1,0 +1,22 @@
+
+body{
+  background-color: black;
+  color: white;
+}
+
+button {
+  border: solid 2px white;
+  border-radius: 50px;
+  background-color: #519568;
+  color: white;
+  font-weight: bolder;
+}
+
+button:disabled {
+  border: solid 2px rgb(200, 198, 198);
+  border-radius: 50px;
+  background-color: rgb(200, 198, 198);
+  color: white;
+  font-weight: bolder;
+}
+
